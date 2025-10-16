@@ -14,17 +14,19 @@
     <article data-testid="test-profile-card" class="container">
      
             <figure class="avatar">
-                <img tabindex="0" id="avatarImage" class="avatar_image" data-testid="test-user-avatar" src="/assets/Vic_profile.png" alt="">
+                <img  id="avatarImage" class="avatar_image" data-testid="test-user-avatar" src="/assets/Vic_profile.png" alt="User Image">
 
                 <input type="file" id="imageInput" style="display: none;" accept="image/*">
 
-                <button role="button" aria-label="click to change image" tabindex="0" class="camera" id="uploadButton">
+                <button role="button" aria-label="click to change image of the avatar" tabindex="0" class="camera" id="uploadButton">
                     <img style="width: 18px;" src="/assets/camera-pro-svgrepo-com.svg" alt="">
                 </button>
+
+                <figcaption class="caption" id="imageUrl"></figcaption>
             </figure>
 
             <div class="content">
-                <h2 data-testid="test-user-name" tabindex="0" aria-label="user's name" style="color: #f0bc1b;">
+                <h2 data-testid="test-user-name" tabindex="0" style="color: #f0bc1b;">
                      Victor Nwimo
                 </h2> 
                 <p data-testid="test-user-bio" aria-label="user's bio" style="padding-top: 10px; padding-bottom: 10px; "> I am a frontend developer, I build web solutions.</p>
@@ -64,21 +66,21 @@
                 </div>
                 <div class="likes">
                     <section data-testid="test-user-hobbies">
-                        <ul role="list">
-                            <h4 style="color: #f0bc1b;">Hobbies</h4>
-                            <li role="listitem">Music</li>
-                            <li role="listitem">Singing</li>
-                            <li role="listitem">Movies</li>
-                            <li role="listitem">Gaming</li>
+                        <h4 tabindex="0" style="color: #f0bc1b;">Hobbies</h4>
+                        <ul  >
+                            <li  >Music</li>
+                            <li  >Singing</li>
+                            <li  >Movies</li>
+                            <li  >Gaming</li>
 
                         </ul>
 
                     </section>
                     <section data-testid="test-user-dislikes">
-                        <ul role="list">
-                            <h4 style="color: #f0bc1b;">Dislikes</h4>
-                            <li role="listitem">Being idle</li>
-                            <li role="listitem">Lazy people</li>
+                        <h4 tabindex="0" style="color: #f0bc1b;">Dislikes</h4>
+                        <ul  >
+                            <li  >Being idle</li>
+                            <li  >Lazy people</li>
                         </ul>
                     </section>
 
@@ -86,17 +88,17 @@
 
                 </div>
                 <nav data-testid="test-user-social-links">
-                    <a tabindex="0" role="link" aria-label="facebook" data-testid="test-user-social-facebook" href="http://www.fb.com" target="_blank" rel="noopener noreferrer">
-                        <img src="/assets/facebook-1-svgrepo-com.svg" class="icons_socials" alt="facebook">
+                    <a tabindex="0" role="link" aria-label="link to facebook account" data-testid="test-user-social-facebook" href="https://web.facebook.com/vicwin13/" target="_blank" rel="noopener noreferrer">
+                        <img src="/assets/facebook-1-svgrepo-com.svg" class="icons_socials" alt="facebook account">
                     </a>
-                    <a tabindex="0" role="link" aria-label="instagram" data-testid="test-user-social-instagram" href="http://www.instagram.com" target="_blank" rel="noopener noreferrer">
-                        <img src="/assets/instagram-1-svgrepo-com.svg" class="icons_socials" alt="instagram">
+                    <a tabindex="0" role="link" aria-label="link to instagram account" data-testid="test-user-social-instagram" href="https://www.instagram.com/vicwin13/?hl=en" target="_blank" rel="noopener noreferrer">
+                        <img src="/assets/instagram-1-svgrepo-com.svg" class="icons_socials" alt="instagram account">
                     </a>
-                    <a tabindex="0" role="link" aria-label="linkedin" data-testid="test-user-social-linkedin" href="http://linkedin.com" target="_blank" rel="noopener noreferrer">
-                        <img src="/assets/Linkedin-logo-blue-In-square-40px.png" class="icons_socials" alt="LinkedIn">
+                    <a tabindex="0" role="link" aria-label="link to linkedin account" data-testid="test-user-social-linkedin" href="https://www.linkedin.com/in/victor-nwimo/" target="_blank" rel="noopener noreferrer">
+                        <img src="/assets/Linkedin-logo-blue-In-square-40px.png" class="icons_socials" alt="LinkedIn account">
                     </a>
-                    <a tabindex="0" role="link" aria-label="twitter(now X)" data-testid="test-user-social-twitter(now X)" href="http://www.x.com" target="_blank" rel="noopener noreferrer">
-                        <img src="/assets/X_logo_2023_original.svg" class="icons_socials" alt="x">
+                    <a tabindex="0" role="link" aria-label="link to twitter(now X) account" data-testid="test-user-social-twitter(now X)" href="https://x.com/VictorWinner13" target="_blank" rel="noopener noreferrer">
+                        <img src="/assets/X_logo_2023_original.svg" class="icons_socials" alt="x account">
                     </a>
                   
                 </nav>

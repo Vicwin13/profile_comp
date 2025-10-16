@@ -37,13 +37,14 @@ if(e.key === 'Enter' || e.key === " "){
 imageInput.addEventListener('change', (event)=>{
     
     const file = event.target.files[0]
-    console.log('This file name', file)
+    
     if(file){
-        const reader = new FileReader();
-        reader.onload = function(e){
-            avatarImage.src = e.target.result
-        }
-        reader.readAsDataURL(file);
-        console.log('This is the image file')
+        const ImageURL = URL.createObjectURL(file)
+
+        avatarImage.src = ImageURL;
+
+        const ImageURLDisplay = document.getElementById('imageUrl')
+        ImageURLDisplay.innerText= `${ImageURL}`
+        console.log(ImageURL)
     }
 })
