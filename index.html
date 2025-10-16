@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>Profile</title>
+</head>
+<body>
+
+    <article data-testid="test-profile-card" class="container">
+     
+            <figure class="avatar">
+                <img tabindex="0" id="avatarImage" class="avatar_image" data-testid="test-user-avatar" src="/assets/Vic_profile.png" alt="">
+
+                <input type="file" id="imageInput" style="display: none;" accept="image/*">
+
+                <button role="button" aria-label="click to change image" tabindex="0" class="camera" id="uploadButton">
+                    <img style="width: 18px;" src="/assets/camera-pro-svgrepo-com.svg" alt="">
+                </button>
+            </figure>
+
+            <div class="content">
+                <h2 data-testid="test-user-name" tabindex="0" aria-label="user's name" style="color: #f0bc1b;">
+                     Victor Nwimo
+                </h2> 
+                <p data-testid="test-user-bio" aria-label="user's bio" style="padding-top: 10px; padding-bottom: 10px; "> I am a frontend developer, I build web solutions.</p>
+                
+                
+                <div style="display: flex; align-items: center; gap: 3px;">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="16" height="16">
+                        
+                        <circle cx="100" cy="100" r="90" stroke="black" stroke-width="4" fill="white" />
+
+                       
+                        <g stroke="black" stroke-width="2">
+                            <line x1="100" y1="15" x2="100" y2="25" />
+                            <line x1="100" y1="175" x2="100" y2="185" />
+                            <line x1="15" y1="100" x2="25" y2="100" />
+                            <line x1="175" y1="100" x2="185" y2="100" />
+                            <line x1="50" y1="50" x2="60" y2="60" />
+                            <line x1="150" y1="50" x2="140" y2="60" />
+                            <line x1="50" y1="150" x2="60" y2="140" />
+                            <line x1="150" y1="150" x2="140" y2="140" />
+                        </g>
+
+                        
+                        <line id="hourHand" x1="100" y1="100" x2="100" y2="30" stroke="black" stroke-width="7" stroke-linecap="round" transform="rotate(90, 100, 100)" />
+
+                        
+                        <line id="minuteHand" x1="100" y1="100" x2="100" y2="20" stroke="blue" stroke-width="5" stroke-linecap="round" transform="rotate(180, 100, 100)" />
+
+                        
+                        <line id="secondHand" x1="100" y1="100" x2="100" y2="15" stroke="red" stroke-width="3" stroke-linecap="round" transform="rotate(270, 100, 100)" />
+
+                        
+                        <circle cx="100" cy="100" r="3" fill="black" />
+                        </svg>
+
+                    <p data-testid="test-user-time" id="time"></p>
+                </div>
+                <div class="likes">
+                    <section data-testid="test-user-hobbies">
+                        <ul role="list">
+                            <h4 style="color: #f0bc1b;">Hobbies</h4>
+                            <li role="listitem">Music</li>
+                            <li role="listitem">Singing</li>
+                            <li role="listitem">Movies</li>
+                            <li role="listitem">Gaming</li>
+
+                        </ul>
+
+                    </section>
+                    <section data-testid="test-user-dislikes">
+                        <ul role="list">
+                            <h4 style="color: #f0bc1b;">Dislikes</h4>
+                            <li role="listitem">Being idle</li>
+                            <li role="listitem">Lazy people</li>
+                        </ul>
+                    </section>
+
+
+
+                </div>
+                <nav data-testid="test-user-social-links">
+                    <a tabindex="0" role="link" aria-label="facebook" data-testid="test-user-social-facebook" href="http://www.fb.com" target="_blank" rel="noopener noreferrer">
+                        <img src="/assets/facebook-1-svgrepo-com.svg" class="icons_socials" alt="facebook">
+                    </a>
+                    <a tabindex="0" role="link" aria-label="instagram" data-testid="test-user-social-instagram" href="http://www.instagram.com" target="_blank" rel="noopener noreferrer">
+                        <img src="/assets/instagram-1-svgrepo-com.svg" class="icons_socials" alt="instagram">
+                    </a>
+                    <a tabindex="0" role="link" aria-label="linkedin" data-testid="test-user-social-linkedin" href="http://linkedin.com" target="_blank" rel="noopener noreferrer">
+                        <img src="/assets/Linkedin-logo-blue-In-square-40px.png" class="icons_socials" alt="LinkedIn">
+                    </a>
+                    <a tabindex="0" role="link" aria-label="twitter(now X)" data-testid="test-user-social-twitter(now X)" href="http://www.x.com" target="_blank" rel="noopener noreferrer">
+                        <img src="/assets/X_logo_2023_original.svg" class="icons_socials" alt="x">
+                    </a>
+                  
+                </nav>
+            </div>
+        
+    </article>
+
+
+    
+
+    <script src="script.js" defer></script>
+</body>
+</html>
